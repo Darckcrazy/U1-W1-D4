@@ -1,19 +1,274 @@
-body{ 
+/* Sfondo generale */
+body {
+    background-image: url('../sfondo.png');
+    background-color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
     max-width: 500px;
     margin: 0 auto;
-    padding: 10px;
-    background: white;
-    font-family: 'arial', sans-serif;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #222;
 }
+
+/* Header card */
+header {
+    background: #071d64;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.13);
+    margin: 18px 8px 18px 8px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header img {
+    width: 95%;
+    margin: 18px 0 0 0;
+    border-radius: 4px;
+}
+
+header nav {
+    margin: 12px 0;
+    font-size: 0.95rem;
+    color: white;
+   
+}
+header nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+header nav li {
+    margin: 6px 0;
+}
+header p {
+    font-size: 1.2rem;
+    color: white;
+    padding-top: 16px;
+}
+header a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* Container */
 .container {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 0px;
+    padding: 0 0 20px 0;
 }
-.section{
-    background: white;
+.mainbox {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    margin: 0 8px 18px 8px;
+    padding: 0;
+    border-left: 4px solid #b84cff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Box bianca del contenuto */
+.section {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    padding: 24px 18px;
+    margin: 0 8px 18px 8px;
+    position: relative;
+    border-left: 2px solid #b84cff;
+}
+/* Titoli */
+h1, h2, h3 {
+    margin: 0 0 12px 0;
+    font-weight: bold;
+    color: #18192a;
+}
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+h2 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.meta {
+    color: #888;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+
+/* Liste */
+ul, ol {
+    margin: 8px 0 8px 18px;
+}
+li {
+    margin-bottom: 6px;
+}
+li code {
+    background: #f3f3f3;
+    border-radius: 3px;
+    padding: 1px 4px;
+    font-size: 0.98em;
+}
+
+/* Tabella */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+    font-size: 0.95rem;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+caption {
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #18192a;
+}
+th, td {
+    border: 1px solid #d1d1e0;
+    padding: 6px 8px;
+    text-align: left;
+}
+th {
+    background: #3b2ff6;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Newsletter */
+.newsletter {
+    background: #f6f6f6;
+    border-radius: 8px;
+    padding: 12px;
+    margin-top: 10px;
+    text-align: center;
+}
+.newsletter input[type="email"] {
+    width: 65%;
+    padding: 6px;
+    margin-right: 4px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+.newsletter button, .newsletter input[type="submit"] {
+    padding: 6px 14px;
+    border-radius: 4px;
+    border: none;
+    background: #3b2ff6;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+.newsletter button:hover {
+    background: #b84cff;
+}
+
+/* Articoli correlati */
+.related {
+    list-style: none;
+    padding: 0;
+}
+.related li {
+    margin-bottom: 12px;
+    background: #f6f6fa;
+    border-radius: 6px;
+    padding: 8px 10px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+.related a {
+    color: #3b2ff6;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+.related a:hover {
+    color: #b84cff;
+}
+.related .meta {
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 2px;
+}
+
+
+/* Footer */
+footer {
+    background: #222;
+    color: #fff;
+    font-size: 0.95rem;
+    padding: 16px 8px 8px 8px;
+    border-radius: 8px 8px 0 0;
+    margin: 0 8px;
+    text-align: center;
+    margin-top: 18px;
+}
+footer + p {
+    background: #222;
+    color: #fff;
+    font-size: 0.9rem;
+    margin: 0 8px 8px 8px;
+    padding: 8px 8px 16px 8px;
+    border-radius: 0 0 8px 8px;
+    text-align: center;
+}
+footer + p a {
+    color: #ff3cac;
+    text-decoration: underline;
+}
+
+/* Responsive video */
+iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 180px;
     border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
-    padding: 16px;
-    margin-bottom: 8px
+    margin-bottom: 12px;
+    border: none;
+    display: block;
+}
+
+/* Responsive: tutto in colonna */
+@media (max-width: 500px) {
+    body {
+        padding: 0;
+    }
+    .container {
+        gap: 18px;
+        padding: 0 0 10px 0;
+    }
+    .section {
+        padding: 18px 6px;
+        margin: 0 2px 14px 2px;
+    }
+    header {
+        margin: 12px 2px 12px 2px;
+    }
+    header img {
+        width: 98%;
+    }
+    table, th, td {
+        font-size: 0.9rem;
+    }
+    .newsletter input[type="email"] {
+        width: 60%;
+    }
+    iframe {
+        height: 140px;
+    }
 }

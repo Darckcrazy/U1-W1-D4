@@ -1,0 +1,12 @@
+body{ 
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    background: white;
+    font-family: 'arial', sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
